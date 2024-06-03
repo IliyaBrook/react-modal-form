@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { CustomForm } from '../src'
+import { CustomForm } from '../src/react-modal-form'
 
 export const App = (): ReactElement => {
 	

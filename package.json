@@ -1,13 +1,28 @@
 {
   "name": "react-modal-form",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "vite.config.js",
-  "repository": {
-    "type": "git"
-    
+  "exports": {
+    ".": {
+      "import": "./dist/react-modal-form.es.ts",
+      "require": "./dist/react-modal-form.umd.ts"
+    }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IliyaBrook/react-modal-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IliyaBrook/react-modal-form/issues"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "Iliya Brook <iliyabrook1987@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
