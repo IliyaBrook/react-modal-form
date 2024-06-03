@@ -1,0 +1,41 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	justify-content: center;
+	position: relative;
+	
+	.headersWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.header {
+		.headerText {
+			color: #232323;
+			font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
+			font-size: 40px;
+			font-weight: 700;
+			letter-spacing: -1.6px;
+			line-height: 44px;
+			margin-top: -1px;
+			white-space: nowrap;
+			width: fit-content;
+		}
+	}
+	
+	.subHeader {
+		margin-top: 12px;
+		.subHeaderText {
+			align-self: stretch;
+			color: #959595;
+			font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 27px;
+		}
+	}
+}

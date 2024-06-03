@@ -1,0 +1,88 @@
+.root {
+	max-height: 50px;
+	font-family: 'Inter-Regular', Helvetica, serif;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+	gap: 2px;
+	padding: 16px;
+	position: relative;
+	width: auto;
+	
+	input {
+		color: #232323;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0;
+		line-height: 27px;
+		margin-top: -1.5px;
+		position: relative;
+		white-space: nowrap;
+		width: fit-content;
+		border: none;
+		outline: none;
+		&::placeholder {
+			color: #9a9a9a;
+			opacity: 1;
+		}
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus,
+		&:-webkit-autofill:active {
+			-webkit-box-shadow: 0 0 0 1000px white inset;
+			box-shadow: 0 0 0 1000px white inset;
+			-webkit-text-fill-color: #000;
+		}
+	}
+	
+	label {
+		color: #357aff;
+		align-items: center;
+		background-color: #ffffff;
+		display: inline-flex;
+		gap: 10px;
+		left: 12px;
+		padding: 0 4px;
+		position: absolute;
+		top: -10px;
+		
+		div {
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 21px;
+			margin-top: -1px;
+			position: relative;
+			white-space: nowrap;
+			width: fit-content;
+		}
+	}
+	.eyeOffIconWrapper {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		cursor: pointer;
+		.eyeOffIcon {
+			height: 24px;
+			position: relative;
+			width: 24px;
+		}
+	}
+}
+
+.active {
+	border: 1.5px solid #357aff;
+	
+	label > div {
+		color: #357aff;
+	}
+}
+
+.inActive {
+	border: 1.5px solid #d9d9d9;
+	
+	label > div {
+		color: #d9d9d9;
+	}
+}

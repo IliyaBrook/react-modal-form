@@ -1,0 +1,40 @@
+@import "../../sharable";
+
+
+
+.root {
+	all: unset;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 18px;
+	p {
+		font-family: Inter-SemiBold, Helvetica, Arial, sans-serif;
+		font-weight: 600;
+		letter-spacing: -0.18px;
+		line-height: 21.6px;
+		margin: 0;
+		white-space: nowrap;
+	}
+	&.blue{
+		@include buttonTheme($blue);
+	}
+	&.red{
+		@include buttonTheme($red);
+	}
+	&.white{
+		@include buttonTheme(#fff);
+		color: #000;
+	}
+	&.green{
+		@include buttonTheme($green);
+	}
+	&.gradientBlack1{
+		@include buttonTheme($black-gradient-1);
+	}
+	&.gradientBlack2{
+		@include buttonTheme($black-gradient-2);
+	}
+}
